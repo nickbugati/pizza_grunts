@@ -66,19 +66,10 @@ const LaunchRequestHandler = {
                 postalCode: secrets.CARD_POSTAL_CODE
             };
 
-            //extra cheese thin crust pizza
-            const pizza = new Item(
+            //Cheese Pizza
+            const pizza=new Item(
                 {
-                    //16 inch hand tossed crust
-                    code: '16SCREEN',
-                    options: {
-                        //sauce, whole pizza : normal
-                        X: { '1/1': '1' },
-                        //cheese, whole pizza  : double 
-                        C: { '1/1': '2' },
-                        //pepperoni, whole pizza : double 
-                        P: { '1/2': '2' }
-                    }
+                    code:'14SCREEN'
                 }
             );
 
@@ -94,7 +85,6 @@ const LaunchRequestHandler = {
 
             // Get the menu for the found store
             const menu = await new Menu(storeID);
-            console.dir(menu, { depth: 1 });
 
             const order = await createOrder(customer, pizza, storeID);
 
