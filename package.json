@@ -1,0 +1,17 @@
+{
+  "name": "pizza_grunts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "aws-sdk": "^2.1464.0",
+    "dominos": "^3.3.1"
+  }
+}
